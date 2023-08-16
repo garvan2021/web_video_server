@@ -57,7 +57,7 @@ WebVideoServer::WebVideoServer(rclcpp::Node::SharedPtr &nh, rclcpp::Node::Shared
   if (private_nh->get_parameter("port", parameter)) {
     port_ = parameter.as_int();
   } else {
-    port_ = 8080;
+    port_ = 9080;
   }
   if (private_nh->get_parameter("verbose", parameter)) {
     __verbose = parameter.as_bool();
